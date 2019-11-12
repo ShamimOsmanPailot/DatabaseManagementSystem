@@ -1,0 +1,117 @@
+
+    A SEGMENT PARA PUBLIC 'CODE'
+    ASSUME CS: A
+    ORG 1000H
+    
+    S:
+    MOV AL,80H
+    OUT 1FH,AL
+
+L: 
+
+   MOV AL,0C0H
+    OUT 19H,AL
+    MOV CX,0FFFFH
+    L1:LOOP L1
+
+MOV AL,04H
+    OUT 1BH,AL 
+    MOV CX,0FFFFH
+    L2:loop L2
+
+    MOV AL,0F9H
+    OUT 19H,AL
+    MOV CX,0FFFFH
+    L3:loop L3
+
+MOV AL,01H
+    OUT 1BH,AL 
+    MOV CX,0FFFFH
+    L4:loop L4
+
+   MOV AL,0A4H
+    OUT 19H,AL 
+    MOV CX,0FFFFH
+    L5:loop L5
+
+MOV AL,04H
+    OUT 1BH,AL 
+    MOV CX,0FFFFH
+    L6:loop L6
+
+    MOV AL,0B0H
+    OUT 19H,AL
+    MOV CX,0FFFFH
+    L7:LOOP L7
+
+MOV AL,02H
+    OUT 1BH,AL 
+    MOV CX,0FFFFH
+    L8:loop L8
+    
+    MOV AL,099H
+    OUT 19H,AL
+    MOV CX,0FFFFH
+    L9:LOOP L9
+
+MOV AL,02H
+    OUT 1BH,AL 
+    MOV CX,0FFFFH
+    L10:loop L10
+
+   MOV AL,092H
+    OUT 19H,AL
+    MOV CX,0FFFFH
+    L11:loop L11
+
+MOV AL,03H
+    OUT 1BH,AL 
+    MOV CX,0FFFFH
+    L12:loop L12
+
+   MOV AL,082H
+    OUT 19H,AL 
+    MOV CX,0FFFFH
+    L13:loop L13
+
+MOV AL,06H
+    OUT 1BH,AL 
+    MOV CX,0FFFFH
+    L14:loop L14
+
+    MOV AL,0F8H
+    OUT 19H,AL
+    MOV CX,0FFFFH
+    L15:LOOP L15
+
+MOV AL,04H
+    OUT 1BH,AL 
+    MOV CX,0FFFFH
+    L16:loop L16
+    
+    MOV AL,080H
+    OUT 19H,AL
+    MOV CX,0FFFFH
+    L17:LOOP L17
+
+MOV AL,04H
+    OUT 1BH,AL 
+    MOV CX,0FFFFH
+    L18:loop L18
+
+    MOV AL,090H
+    OUT 19H,AL
+    MOV CX,0FFFFH
+    L19:LOOP L19
+
+MOV AL,0FH
+    OUT 1BH,AL 
+    MOV CX,0FFFFH
+    L20:loop L20
+
+    JMP L
+    
+    A ENDS
+    END S
+
+
